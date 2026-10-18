@@ -100,17 +100,11 @@
        
         }
 
-      /*  .hero-image {
+        .hero-image {
             width: 500px;
             height: auto;
             margin-bottom: 5px;
-        } */
-
- .hero-image {
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-}
+        } 
 
         .hero h2 {
             font-size: 24px;
