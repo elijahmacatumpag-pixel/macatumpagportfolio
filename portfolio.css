@@ -100,11 +100,17 @@
        
         }
 
-        .hero-image {
+      /*  .hero-image {
             width: 500px;
             height: auto;
             margin-bottom: 5px;
-        }
+        } /*
+
+ .hero-image {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
 
         .hero h2 {
             font-size: 24px;
@@ -428,5 +434,84 @@
                 padding: 60px 5%;
             }
         }
+
+ /* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Prevent the whole page from becoming wider than the screen */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Your Elijah name image */
+    .hero-image {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    /* Description */
+    .hero-text p {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
+    /* Your personal photo */
+    .hero-photo {
+        width: 80%;
+        max-width: 300px;
+        flex: none;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        height: auto;
+    }
+}
 
    
